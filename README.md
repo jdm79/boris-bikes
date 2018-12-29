@@ -13,6 +13,14 @@ As a person,
 So that I can use a good bike,
 I'd like to see if a bike is working
 ```
+### Functional Representation
+```
+Objects         | Messages
+------------------------------
+person          |
+bike            | is_working (boolean)
+docking station | release_bike
+```
 
 ## Build status
 
