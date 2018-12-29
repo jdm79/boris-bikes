@@ -22,14 +22,45 @@ bike            | is_working (boolean)
 docking station | release_bike
 ```
 
-## Build status
-
 ## Tech used
 
+Ruby and RSpec
+
 ## Code example
+```
+require_relative 'bike'
+
+class DockingStation
+  attr_reader :bike
+  def release_bike
+    Bike.new
+  end
+
+  def dock(bike)
+    @bike = bike
+  end
+end
+```
 
 ## Installation
+```
+$ git clone git@github.com:jdm79/boris-bikes.git
+$ cd boris-bikes
+```
 
 ## Tests
 
+In the root folder, type:
+```
+$ rspec
+```
+
 ## How to use
+
+In a Ruby REPL such as IRB/Pry on your terminal, type:
+```
+> require './lib/docking_station.rb'
+> require './lib/bike.rb'
+> bike = Bike.new
+> ds = DockingStation.new
+```
