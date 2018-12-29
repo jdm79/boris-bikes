@@ -1,17 +1,27 @@
-# Boris Bikes
+## Boris Bikes
 
 A TDD Ruby application which simulates the Santander cycles system of London. Bikes, docking stations and users.
 
-# Motivation
+## Client's Requirements
 
-# Build status
+```
+As a person,
+So that I can use a bike,
+I'd like a docking station to release a bike.
 
-# Tech used
+As a person,
+So that I can use a good bike,
+I'd like to see if a bike is working
+```
 
-# Code example
+## Build status
 
-# Installation
+## Tech used
 
-# Tests
+## Code example
 
-# How to use
+## Installation
+
+## Tests
+
+## How to use
