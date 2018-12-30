@@ -14,6 +14,8 @@ class DockingStation
     # Guard condition pattern
     # By catching errors is first priority, errors cannot progress further into program
     fail 'No bikes available' if empty?
+    fail 'No bikes available' if broken?
+
     bikes.pop
   end
 
@@ -32,5 +34,9 @@ class DockingStation
 
   def empty?
     bikes.empty?
+  end
+
+  def broken?
+    bikes[0].broken?
   end
 end
