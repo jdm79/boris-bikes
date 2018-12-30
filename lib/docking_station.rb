@@ -37,6 +37,6 @@ class DockingStation
   end
 
   def broken?
-    bikes[0].broken?
+    bikes.last.broken?
   end
 end
