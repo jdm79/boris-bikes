@@ -2,6 +2,8 @@
 
 A TDD Ruby application which simulates the Santander cycles system of London. Bikes, docking stations and users.
 
+
+
 ### Client's Requirements
 
 ```
@@ -23,8 +25,12 @@ bike            | is_working (boolean)
 docking station | release_bike
 ```
 
+
+
 ### Tech used
 Ruby and RSpec
+
+
 
 ### Code example
 ```
@@ -42,11 +48,15 @@ class DockingStation
 end
 ```
 
+
+
 ### Installation
 ```
 $ git clone git@github.com:jdm79/boris-bikes.git
 $ cd boris-bikes
 ```
+
+
 
 ### Tests
 In the root folder, type:
