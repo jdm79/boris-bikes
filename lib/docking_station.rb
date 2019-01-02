@@ -13,14 +13,14 @@ class DockingStation
   def release_bike
     # Guard condition pattern
     # By catching errors is first priority, errors cannot progress further into program
-    fail 'No bikes available' if empty?
-    fail 'No bikes available' if broken?
+    raise 'No bikes available' if empty?
+    raise 'No bikes available' if broken?
 
     bikes.pop
   end
 
   def dock(bike)
-    fail 'Docking station full' if full?
+    raise 'Docking station full' if full?
     bikes << bike
   end
 
