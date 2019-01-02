@@ -16,9 +16,9 @@ describe DockingStation do
 
   describe '#release bike' do
     it 'releases working bikes' do
-      bike = Bike.new
-      subject.dock(bike)
-      expect(subject.release_bike).to eq bike
+      subject.dock(String.new("I am a bike"))
+      bike = subject.release_bike
+      expect(bike).to be_working
     end
 
     it 'raises an error if bike is broken' do
